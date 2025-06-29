@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Discord Bot Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌙 My Discord Bot Dashboard</h1>
+    <nav>
+      <button id="login-btn">Login with Discord</button>
+      <button id="logout-btn" style="display: none;">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="user-info" style="display: none;">
+      <h2>Welcome, <span id="username"></span>!</h2>
+      <img id="avatar" src="" alt="Avatar" width="80" height="80" />
+    </section>
+
+    <section id="bot-status">
+      <h2>🤖 Bot Status</h2>
+      <p id="status-text">Loading...</p>
+      <button id="restart-bot">Restart Bot</button>
+    </section>
+
+    <section id="commands">
+      <h2>⚙️ Commands</h2>
+      <button id="ping-btn">Ping</button>
+      <button id="say-btn">Say Hello</button>
+      <input id="say-input" type="text" placeholder="Type message..." />
+    </section>
+
+    <section id="settings">
+      <h2>🛠️ Settings</h2>
+      <label>
+        Prefix:
+        <input id="prefix-input" type="text" placeholder="!" />
+      </label>
+      <button id="save-settings">Save</button>
+    </section>
+
+    <section id="logs">
+      <h2>📜 Bot Logs</h2>
+      <pre id="logs-output">Loading...</pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
